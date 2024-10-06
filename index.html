@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb | Holiday rentals, cabins, Beach houses & more</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <!--Navbar-->
+        <div class="grid grid-cols-3 px-16 w-screen h-20 border-b-[1px] items-center fixed top-0 bg-white">
+            <img src="Assets\airbnb-logo.png" alt="" class="h-16 w-28"/>
+            <div class="pl-4 pr-4 flex justify-evenly items-center border rounded-full shadow-md h-12 w-96">
+                <button class="border-r-2 text-sm font-medium pr-4">Anywhere</button>
+                <button class="border-r-2 text-sm font-medium pr-4">Any week</button>
+                <button class="text-sm font-medium text-gray-500">Add guests</button>
+                <i class="fa-solid fa-magnifying-glass bg-red-500 text-white rounded-full p-2"></i>
+            </div>
+            <div class="flex justify-end items-center gap-8">
+                <button class="text-sm font-medium">Airbnb your home</button>
+                <span class="material-symbols-outlined">
+                    language
+                    </span>
+                <div class="flex justify-evenly items-center gap-2 rounded-full border shadow-md h-10 w-20 py-1.25 pl-2">
+                    <i class="fa-solid fa-bars"></i>
+                    <button class="bg-black text-white rounded-full text-center w-7 h-7 text-[10px] font-semibold">Y</button>
+
+                </div>
+            </div>
+        </div>
+
+        <!--Category bar-->
+        <div class="flex items-center h-24 space-x-5 top-20 fixed bg-white w-screen">
+            <div class="flex items-center justify-center space-x-9">
+                <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2 pl-10">
+                    <img src="Assets\type1.jpeg" alt="" class="h-8 w-8"/>
+                    <p class="text-xs font-normal">Amazing pools</p>
+                </div>
+                <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+                    <img src="Assets\type2.jpeg" alt="" class="h-8 w-8 text-gray-400"/>
+                    <p class="text-xs font-normal">Play</p>
+                </div>
+                <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+                    <img src="Assets\type10.jpeg" alt="" class="h-8 w-8 text-gray-400"/>
+                    <p class="text-xs font-normal">Beach Front</p>
+                </div>
+                <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+                    <img src="Assets\type3.jpeg" alt="" class="h-8 w-8 text-gray-400"/>
+                    <p class="text-xs font-normal">Historical Homes</p>
+                </div>
+                <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+                    <img src="Assets\type4.jpeg" alt="" class="h-8 w-8 text-gray-400"/>
+                    <p class="text-xs font-normal">Countryside</p>
+                </div>
+                <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+                    <img src="Assets\type5.jpeg" alt="" class="h-8 w-8 text-gray-400"/>
+                    <p class="text-xs font-normal">Surfing</p>
+                </div>
+                <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+                    <img src="Assets\type6.jpeg" alt="" class="h-8 w-8 text-gray-400"/>
+                    <p class="text-xs font-normal">Farm House</p>
+                </div>
+                <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+                    <img src="Assets\type7.jpeg" alt="" class="h-8 w-8 text-gray-400"/>
+                    <p class="text-xs font-normal">Amazing Views</p>
+                </div>
+                <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+                    <img src="Assets\type8.jpeg" alt="" class="h-8 w-8 text-gray-400"/>
+                    <p class="text-xs font-normal">Rooms</p>
+                </div>
+                <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+                    <img src="Assets\type9.jpeg" alt="" class="h-8 w-8 text-gray-400"/>
+                    <p class="text-xs font-normal">Lake Front</p>
+                </div>
+                <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+                    <img src="Assets\type11.jpeg" alt="" class="h-8 w-8 text-gray-400"/>
+                    <p class="text-xs font-normal">OMG!</p>
+                </div>
+                <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+                    <img src="Assets\type12.jpeg" alt="" class="h-8 w-8 text-gray-400"/>
+                    <p class="text-xs font-normal">Golfing</p>
+                </div>
+            
+            </div>
+            <span class="material-symbols-outlined">
+                arrow_circle_right
+                </span>
+                <div class="flex justify-around items-center rounded-xl shadow-md h-12 w-24 border ">
+                    <span class="material-symbols-outlined pl-2">
+                        sync_alt
+                        </span>
+                        <p class="text-xs font-medium pr-2">Filters</p>
+                </div>
+                <div class="flex justify-center">
+                    <div class="flex justify-between border rounded-xl w-[500px] h-12">
+                        <div class="justify-start pr-4">
+                            <p class="pl-4 font-medium text-sm mt-2">Display total before taxes</p>
+                        </div>
+                        <span class="mt-2 material-symbols-outlined">
+                            toggle_off
+                            </span>
+                    </div>
+        
+                </div>
+        </div>
+
+    </header>
+
+    
+        <!--Hotel-->
+        <main class="mt-48 mx-28">
+        <div class="grid grid-cols-4">
+            <div class="flex flex-col h-96 w-72">
+                <img src="Assets\Img3.jpeg" alt="" class="w-72 h-64 rounded-xl"/>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Chennai, India</p>
+                    <div class="flex">
+                        <i class="fa-solid fa-star"></i>
+                        <p class="text-sm font-light">5.0</p>
+                        </div>
+                </div>
+                
+                <p class="text-sm text-gray-400">200 kilometers away</p>
+                <p class="text-sm text-gray-400">11-20 Oct</p>
+                <p class="text-sm font-medium mt-2">₹ 7,706 night</p>
+            </div>
+
+            <div class="flex flex-col h-96 w-72">
+                <img src="Assets\Img3.jpeg" alt="" class="w-72 h-64 rounded-xl"/>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Chennai, India</p>
+                    <div class="flex">
+                        <i class="fa-solid fa-star"></i>
+                        <p class="text-sm font-light">5.0</p>
+                        </div>
+                </div>
+                
+                <p class="text-sm text-gray-400">200 kilometers away</p>
+                <p class="text-sm text-gray-400">11-20 Oct</p>
+                <p class="text-sm font-medium mt-2">₹ 7,706 night</p>
+            </div>
+
+            <div class="flex flex-col h-96 w-72">
+                <img src="Assets\Img3.jpeg" alt="" class="w-72 h-64 rounded-xl"/>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Chennai, India</p>
+                    <div class="flex">
+                        <i class="fa-solid fa-star"></i>
+                        <p class="text-sm font-light">5.0</p>
+                        </div>
+                </div>
+                
+                <p class="text-sm text-gray-400">200 kilometers away</p>
+                <p class="text-sm text-gray-400">11-20 Oct</p>
+                <p class="text-sm font-medium mt-2">₹ 7,706 night</p>
+            </div>
+
+            <div class="flex flex-col h-96 w-72">
+                <img src="Assets\Img3.jpeg" alt="" class="w-72 h-64 rounded-xl"/>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Chennai, India</p>
+                    <div class="flex">
+                        <i class="fa-solid fa-star"></i>
+                        <p class="text-sm font-light">5.0</p>
+                        </div>
+                </div>
+                
+                <p class="text-sm text-gray-400">200 kilometers away</p>
+                <p class="text-sm text-gray-400">11-20 Oct</p>
+                <p class="text-sm font-medium mt-2">₹ 7,706 night</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-4">
+            <div class="flex flex-col h-96 w-72">
+                <img src="Assets\Img3.jpeg" alt="" class="w-72 h-64 rounded-xl"/>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Chennai, India</p>
+                    <div class="flex">
+                        <i class="fa-solid fa-star"></i>
+                        <p class="text-sm font-light">5.0</p>
+                        </div>
+                </div>
+                
+                <p class="text-sm text-gray-400">200 kilometers away</p>
+                <p class="text-sm text-gray-400">11-20 Oct</p>
+                <p class="text-sm font-medium mt-2">₹ 7,706 night</p>
+            </div>
+
+            <div class="flex flex-col h-96 w-72">
+                <img src="Assets\Img3.jpeg" alt="" class="w-72 h-64 rounded-xl"/>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Chennai, India</p>
+                    <div class="flex">
+                        <i class="fa-solid fa-star"></i>
+                        <p class="text-sm font-light">5.0</p>
+                        </div>
+                </div>
+                
+                <p class="text-sm text-gray-400">200 kilometers away</p>
+                <p class="text-sm text-gray-400">11-20 Oct</p>
+                <p class="text-sm font-medium mt-2">₹ 7,706 night</p>
+            </div>
+
+            <div class="flex flex-col h-96 w-72">
+                <img src="Assets\Img3.jpeg" alt="" class="w-72 h-64 rounded-xl"/>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Chennai, India</p>
+                    <div class="flex">
+                        <i class="fa-solid fa-star"></i>
+                        <p class="text-sm font-light">5.0</p>
+                        </div>
+                </div>
+                
+                <p class="text-sm text-gray-400">200 kilometers away</p>
+                <p class="text-sm text-gray-400">11-20 Oct</p>
+                <p class="text-sm font-medium mt-2">₹ 7,706 night</p>
+            </div>
+
+            <div class="flex flex-col h-96 w-72">
+                <img src="Assets\Img3.jpeg" alt="" class="w-72 h-64 rounded-xl"/>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Chennai, India</p>
+                    <div class="flex">
+                        <i class="fa-solid fa-star"></i>
+                        <p class="text-sm font-light">5.0</p>
+                        </div>
+                </div>
+                
+                <p class="text-sm text-gray-400">200 kilometers away</p>
+                <p class="text-sm text-gray-400">11-20 Oct</p>
+                <p class="text-sm font-medium mt-2">₹ 7,706 night</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-4">
+            <div class="flex flex-col h-96 w-72">
+                <img src="Assets\Img3.jpeg" alt="" class="w-72 h-64 rounded-xl"/>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Chennai, India</p>
+                    <div class="flex">
+                        <i class="fa-solid fa-star"></i>
+                        <p class="text-sm font-light">5.0</p>
+                        </div>
+                </div>
+                
+                <p class="text-sm text-gray-400">200 kilometers away</p>
+                <p class="text-sm text-gray-400">11-20 Oct</p>
+                <p class="text-sm font-medium mt-2">₹ 7,706 night</p>
+            </div>
+
+            <div class="flex flex-col h-96 w-72">
+                <img src="Assets\Img3.jpeg" alt="" class="w-72 h-64 rounded-xl"/>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Chennai, India</p>
+                    <div class="flex">
+                        <i class="fa-solid fa-star"></i>
+                        <p class="text-sm font-light">5.0</p>
+                        </div>
+                </div>
+                
+                <p class="text-sm text-gray-400">200 kilometers away</p>
+                <p class="text-sm text-gray-400">11-20 Oct</p>
+                <p class="text-sm font-medium mt-2">₹ 7,706 night</p>
+            </div>
+
+            <div class="flex flex-col h-96 w-72">
+                <img src="Assets\Img3.jpeg" alt="" class="w-72 h-64 rounded-xl"/>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Chennai, India</p>
+                    <div class="flex">
+                        <i class="fa-solid fa-star"></i>
+                        <p class="text-sm font-light">5.0</p>
+                        </div>
+                </div>
+                
+                <p class="text-sm text-gray-400">200 kilometers away</p>
+                <p class="text-sm text-gray-400">11-20 Oct</p>
+                <p class="text-sm font-medium mt-2">₹ 7,706 night</p>
+            </div>
+
+            <div class="flex flex-col h-96 w-72">
+                <img src="Assets\Img3.jpeg" alt="" class="w-72 h-64 rounded-xl"/>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Chennai, India</p>
+                    <div class="flex">
+                        <i class="fa-solid fa-star"></i>
+                        <p class="text-sm font-light">5.0</p>
+                        </div>
+                </div>
+                
+                <p class="text-sm text-gray-400">200 kilometers away</p>
+                <p class="text-sm text-gray-400">11-20 Oct</p>
+                <p class="text-sm font-medium mt-2">₹ 7,706 night</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="justify-between h-12 fixed bottom-0 w-screen bg-white">
+        <div class="flex text-sm font-base space-x-2 pl-16 pr-16 mt-4">
+           <p> © 2024 Airbnb, Inc.</p> 
+           <p>·</p>
+           <p>Privacy</p>
+           <p>·</p>
+           <p>Terms</p>
+           <p>·</p>
+           <p>Sitemap</p>
+           <p>·</p>
+           <p>Company details</p>
+      
+
+          <div class="flex content-end space-x-4 text-sm pl-16">
+            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
+            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
+            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
+            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
+            
+            <span class="material-symbols-outlined">
+                language
+                </span>
+                <p>English (IN)</p>
+                <p>₹ INR</p>
+                <i class="mt-1 fa-brands fa-facebook"></i>
+                <i class="mt-1 fa-brands fa-twitter"></i>
+                <i class="mt-1 fa-brands fa-instagram"></i>
+          </div>
+        </div>
+
+    </footer>
+    
+</body>
+</html>
